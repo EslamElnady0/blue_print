@@ -1,7 +1,7 @@
 name: blue_print
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: https://github.com/EslamElnady0/blue_print
 
 environment:
   sdk: ^3.7.0
