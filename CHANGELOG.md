@@ -9,3 +9,8 @@
   - `logic/` (cubits)
   - `ui/` (views, widgets)
 - All layers come with pre-filled templates ready for development.
+
+## 0.0.2
+
+- Initial release of `blue_print` CLI.
+- Updated the docs with new README.md
