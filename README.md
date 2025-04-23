@@ -49,8 +49,8 @@ lib/
     └── login/
         ├── data/
         │   ├── models/
-        │   ├── datasources/
-        │   └── repositories/
+        │   ├── data sources/
+        │   └── repos/
         ├── logic/
         │   └── login_cubit.dart
         └── ui/
