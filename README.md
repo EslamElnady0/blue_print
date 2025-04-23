@@ -1,4 +1,4 @@
-# 🧱 blue_print
+# 📝 blue_print
 
 **blue_print** is a CLI tool that helps Flutter developers kickstart and scale their projects quickly with clean folder architecture and prebuilt templates. 🚀
 
