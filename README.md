@@ -31,15 +31,12 @@ Make sure you add the Dart SDK to your system's path.
 
 🛠 Usage
 Create a new project
-bash
-Copy
-Edit
+
 blue_print create-project --name my_awesome_app
 Add a new feature
-bash
-Copy
-Edit
+
 blue_print add-feature --name login
+
 📁 Output Structure
 Example structure after running blue_print add-feature --name login:
 
