@@ -104,7 +104,7 @@ lib/
 
 ```
 
-### 📦 Packages Included
+# 📦 Packages Included
 
 The `blue_print` project template comes preconfigured with several useful packages to help you get started with your Flutter projects efficiently. Below are the packages included in the template:
 
