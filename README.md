@@ -35,26 +35,48 @@ Make sure you add the Dart SDK to your system's path.
 
 Create a new project
 
-blue_print create-project --name my_awesome_app
+```bash
+blue_print create-project --name <project_name>
+```
+
 Add a new feature
 
-blue_print add-feature --name login
+```bash
+blue_print add-feature --name <feature_name>
+```
 
-📁 Output Structure
-Example structure after running blue_print add-feature --name login:
+## 📁 Output Structure
+
+🔧 After running blue_print create-project --name my_awesome_app:
+
+```bash
+lib/
+├── core/
+│   ├── helpers/           # Utility functions and common helpers
+│   ├── network/           # Networking layer (API calls, result handling, error parsing)
+│   ├── themes/            # Centralized themes and styling
+│   ├── widgets/           # Reusable shared widgets
+│   ├── di/                # Dependency injection setup
+│   └── routes/            # App routing configuration
+└── features/
+```
+
+The core/ layer provides a robust foundation of reusable modules that support scalability and maintainability across the app.
+
+🧩 After running blue_print add-feature --name login:
 
 ```bash
 lib/
 └── features/
     └── login/
-        ├── data/
+        ├── data/                 # Responsible for dealing with api requests
         │   ├── models/
-        │   ├── data sources/
-        │   └── repos/
-        ├── logic/
-        │   └── login_cubit.dart
+        │   ├── data sources/     # Contains Remote and Local Data Sources
+        │   └── repos/            # Contains The Api Repo
+        ├── logic/                # Contains Cubits and Logic Holders
+        │   └── login_cubit/      # Contains LoginCubit and LoginState
         └── ui/
-            ├── views/
+            ├── views/            # Contains the view file
             └── widgets/
 
 ```
