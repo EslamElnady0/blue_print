@@ -73,7 +73,7 @@ lib/
 
 The core/ layer provides a robust foundation of reusable modules that support scalability and maintainability across the app.
 
-🧩 After running blue_print add-feature --name login:
+-🧩 After running blue_print add-feature --name login:
 
 ```bash
 lib/
