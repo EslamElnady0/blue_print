@@ -1,7 +1,8 @@
 import 'dart:io';
-import 'package:blue_print/features_classes_content.dart';
-import 'package:blue_print/folders_structure.dart';
+import 'package:blueprint_cli/folders_structure.dart';
 import 'package:path/path.dart' as path;
+
+import 'features_classes_content.dart';
 
 void createRepoFiles({required String dataPath, required String featureName}) {
   final repoPath = path.join(dataPath, 'repos');

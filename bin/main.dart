@@ -1,12 +1,12 @@
 import 'dart:io';
 import 'package:args/args.dart';
-import 'package:blue_print/core_classes_content.dart';
-import 'package:blue_print/create_files_helper.dart';
-import 'package:blue_print/data_layer_generation.dart';
-import 'package:blue_print/dependancies.dart';
-import 'package:blue_print/folders_structure.dart';
-import 'package:blue_print/logic_layer_generation.dart';
-import 'package:blue_print/ui_layer_generation.dart';
+import 'package:blueprint_cli/core_classes_content.dart';
+import 'package:blueprint_cli/create_files_helper.dart';
+import 'package:blueprint_cli/data_layer_generation.dart';
+import 'package:blueprint_cli/dependancies.dart';
+import 'package:blueprint_cli/folders_structure.dart';
+import 'package:blueprint_cli/logic_layer_generation.dart';
+import 'package:blueprint_cli/ui_layer_generation.dart';
 
 import 'package:path/path.dart' as path;
 

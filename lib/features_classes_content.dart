@@ -1,4 +1,4 @@
-import 'package:blue_print/create_files_helper.dart';
+import 'package:blueprint_cli/create_files_helper.dart';
 
 String remoteDataSourceContent(String featureName) => '''
 import 'package:dio/dio.dart';
