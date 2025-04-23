@@ -1,6 +1,5 @@
+import 'package:blueprint_cli/blue_print.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:blue_print/blue_print.dart';
 
 void main() {
   test('adds one to input values', () {
