@@ -103,3 +103,25 @@ lib/
             └── widgets/              # Contains the UI components/widgets
 
 ```
+
+### 📦 Packages Included
+
+The `blue_print` project template comes preconfigured with several useful packages to help you get started with your Flutter projects efficiently. Below are the packages included in the template:
+
+| Package Name         | Purpose                                                                         |
+| -------------------- | ------------------------------------------------------------------------------- | --- | ---------- | --- |
+| `flutter_screenutil` | For responsive design and screen size adaptability                              |
+| `shared_preferences` | To store simple key-value pairs locally on the device                           |
+| `get_it`             | Service locator for dependency injection                                        |
+| `dio`                | Powerful HTTP client for network requests                                       |
+| `pretty_dio_logger`  | Logs Dio requests and responses for better debugging                            |
+| `freezed_annotation` | Code generation for immutable classes and sealed unions (using                  |     | `freezed`) |     |
+| `json_annotation`    | Provides annotations for JSON serialization and deserialization                 |
+| `flutter_bloc`       | State management using Bloc or Cubit pattern                                    |
+| `retrofit`           | API client generator that uses annotations for network calls                    |
+| `retrofit_generator` | Code generation for `retrofit` API client                                       |
+| `build_runner`       | Required for code generation (e.g., `retrofit`, `freezed`, `json_serializable`) |
+| `freezed`            | Code generation for immutable classes, union types, and copyWith methods        |
+| `json_serializable`  | Code generation for converting objects to and from JSON                         |
+
+These packages are ready for use, but feel free to modify, add, or remove any packages based on your project requirements.
