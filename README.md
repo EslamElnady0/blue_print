@@ -12,14 +12,15 @@
       - Routing setup
       - Dependency injection
       - Networking utilities
-      - Error handling
+      - Common Widgets
       - Helper functions
+      - Initial theming setup
 
 - **Feature Boilerplate Generator**
   - `blue_print add-feature --name <feature_name>`
   - Adds a complete feature module with:
     - `data/` → data sources, models, repositories
-    - `logic/` → view models and logic holders
+    - `logic/` → cubits and logic holders
     - `ui/` → views and widgets
   - Every folder includes ready-to-code templates.
 
