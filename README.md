@@ -1,6 +1,6 @@
-# 📝 blue_print
+# 📝 blueprint_cli
 
-**blue_print** is a CLI tool that helps Flutter developers kickstart and scale their projects quickly with clean folder architecture and prebuilt templates. 🚀
+**blueprint_cli** is a CLI tool that helps Flutter developers kickstart and scale their projects quickly with clean folder architecture and prebuilt templates. 🚀
 
 ## ✨ Features
 
@@ -27,7 +27,7 @@
 ## 📦 Installation
 
 ```bash
-dart pub global activate blue_print
+dart pub global activate blueprint_cli
 ```
 
 Make sure you add the Dart SDK to your system's path.
@@ -106,7 +106,7 @@ lib/
 
 ## 📦 Packages Included
 
-The `blue_print` project template comes preconfigured with several useful packages to help you get started with your Flutter projects efficiently. Below are the packages included in the template:
+The `blueprint_cli` project template comes preconfigured with several useful packages to help you get started with your Flutter projects efficiently. Below are the packages included in the template:
 
 | Package Name         | Purpose                                                                         |
 | -------------------- | ------------------------------------------------------------------------------- |
