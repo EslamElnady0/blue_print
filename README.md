@@ -1,39 +1,58 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 🧱 blue_print
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+**blue_print** is a CLI tool that helps Flutter developers kickstart and scale their projects quickly with clean folder architecture and prebuilt templates. 🚀
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## ✨ Features
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+- **Project Scaffolding**
 
-## Features
+  - `blue_print create-project --name <project_name>`
+  - Instantly sets up a Flutter project with essential packages and a well-structured architecture:
+    - `core/` contains:
+      - Routing setup
+      - Dependency injection
+      - Networking utilities
+      - Error handling
+      - Helper functions
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **Feature Boilerplate Generator**
+  - `blue_print add-feature --name <feature_name>`
+  - Adds a complete feature module with:
+    - `data/` → data sources, models, repositories
+    - `logic/` → view models and logic holders
+    - `ui/` → views and widgets
+  - Every folder includes ready-to-code templates.
 
-## Getting started
+## 📦 Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```bash
+dart pub global activate blue_print
+Make sure you add the Dart SDK to your system's path.
 
-## Usage
+🛠 Usage
+Create a new project
+bash
+Copy
+Edit
+blue_print create-project --name my_awesome_app
+Add a new feature
+bash
+Copy
+Edit
+blue_print add-feature --name login
+📁 Output Structure
+Example structure after running blue_print add-feature --name login:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+lib/
+└── features/
+    └── login/
+        ├── data/
+        │   ├── models/
+        │   ├── data sources/
+        │   └── repos/
+        ├── logic/
+        │   ├── login_cubit/
+        └── ui/
+            ├── views/
+            └── widgets/
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
