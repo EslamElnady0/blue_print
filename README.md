@@ -43,19 +43,18 @@ blue_print add-feature --name login
 📁 Output Structure
 Example structure after running blue_print add-feature --name login:
 
+```bash
 lib/
 └── features/
-└── login/
-├── data/
-│ ├── models/
-│ ├── data sources/
-│ └── repos/
-├── logic/
-│ ├── login_cubit/
-└── ui/
-├── views/
-└── widgets/
-
-```
+    └── login/
+        ├── data/
+        │   ├── models/
+        │   ├── datasources/
+        │   └── repositories/
+        ├── logic/
+        │   └── login_cubit.dart
+        └── ui/
+            ├── views/
+            └── widgets/
 
 ```
