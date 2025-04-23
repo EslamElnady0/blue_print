@@ -12,10 +12,12 @@ import 'package:path/path.dart' as path;
 
 void main(List<String> arguments) {
   final parser = ArgParser();
-  final createProjectCommand = parser.addCommand('create-project')
-    ..addOption('name', abbr: 'n', help: 'Project name', mandatory: true);
-  final addFeatureCommand = parser.addCommand('add-feature')
-    ..addOption('name', abbr: 'n', help: 'Feature name', mandatory: true);
+  parser
+      .addCommand('create-project')
+      .addOption('name', abbr: 'n', help: 'Project name', mandatory: true);
+  parser
+      .addCommand('add-feature')
+      .addOption('name', abbr: 'n', help: 'Feature name', mandatory: true);
 
   final results = parser.parse(arguments);
 
