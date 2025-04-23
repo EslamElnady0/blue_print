@@ -52,14 +52,23 @@ blue_print add-feature --name <feature_name>
 
 ```bash
 lib/
+│
 ├── core/
-│   ├── helpers/           # Utility functions and common helpers
-│   ├── network/           # Networking layer (API calls, result handling, error parsing)
-│   ├── themes/            # Centralized themes and styling
-│   ├── widgets/           # Reusable shared widgets
-│   ├── di/                # Dependency injection setup
-│   └── routes/            # App routing configuration
-└── features/
+│   │
+│   ├── helpers/              # Utility functions and common helpers
+│   │
+│   ├── network/              # Networking layer (API calls, result handling, error parsing)
+│   │
+│   ├── themes/               # Centralized themes and styling
+│   │
+│   ├── widgets/              # Reusable shared widgets
+│   │
+│   ├── di/                   # Dependency injection setup
+│   │
+│   └── routes/               # App routing configuration
+│
+└── features/                 # Modular feature-based structure
+
 ```
 
 The core/ layer provides a robust foundation of reusable modules that support scalability and maintainability across the app.
@@ -68,16 +77,29 @@ The core/ layer provides a robust foundation of reusable modules that support sc
 
 ```bash
 lib/
+│
+├── core/                            # Contains core modules (helpers, networking, DI, etc.)
+│
 └── features/
+    │
     └── login/
-        ├── data/                 # Responsible for dealing with api requests
-        │   ├── models/
-        │   ├── data sources/     # Contains Remote and Local Data Sources
-        │   └── repos/            # Contains The Api Repo
-        ├── logic/                # Contains Cubits and Logic Holders
-        │   └── login_cubit/      # Contains LoginCubit and LoginState
+        │
+        ├── data/                      # Responsible for dealing with API requests
+        │   │
+        │   ├── models/               # Data models used in the login feature
+        │   │
+        │   ├── data sources/         # Contains Remote and Local Data Sources
+        │   │
+        │   └── repos/                # Contains the API repository
+        │
+        ├── logic/                    # Contains Cubits and Logic Holders
+        │   │
+        │   └── login_cubit/          # Contains LoginCubit and LoginState
+        │
         └── ui/
-            ├── views/            # Contains the view file
-            └── widgets/
+            │
+            ├── views/                # Contains the view file(s)
+            │
+            └── widgets/              # Contains the UI components/widgets
 
 ```
