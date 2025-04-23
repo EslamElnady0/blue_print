@@ -27,6 +27,8 @@
 
 ```bash
 dart pub global activate blue_print
+
+
 Make sure you add the Dart SDK to your system's path.
 
 🛠 Usage
