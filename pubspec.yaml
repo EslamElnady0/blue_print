@@ -1,7 +1,10 @@
 name: blue_print
-description: "A new Flutter package project."
+description: A CLI tool for quickly bootstrapping Flutter projects and adding feature modules with clean architecture.
 version: 0.0.1
 homepage: https://github.com/EslamElnady0/blue_print
+repository: https://github.com/EslamElnady0/blue_print
+issue_tracker: https://github.com/EslamElnady0/blue_print/issues
+license: MIT
 
 environment:
   sdk: ^3.7.0
@@ -21,6 +24,7 @@ dev_dependencies:
 
 executables:
   blue_print: main
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
