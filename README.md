@@ -27,11 +27,12 @@
 
 ```bash
 dart pub global activate blue_print
-
+```
 
 Make sure you add the Dart SDK to your system's path.
 
-🛠 Usage
+## 🛠 Usage
+
 Create a new project
 
 blue_print create-project --name my_awesome_app
@@ -44,14 +45,17 @@ Example structure after running blue_print add-feature --name login:
 
 lib/
 └── features/
-    └── login/
-        ├── data/
-        │   ├── models/
-        │   ├── data sources/
-        │   └── repos/
-        ├── logic/
-        │   ├── login_cubit/
-        └── ui/
-            ├── views/
-            └── widgets/
+└── login/
+├── data/
+│ ├── models/
+│ ├── data sources/
+│ └── repos/
+├── logic/
+│ ├── login_cubit/
+└── ui/
+├── views/
+└── widgets/
+
+```
+
 ```
