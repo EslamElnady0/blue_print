@@ -1,6 +1,6 @@
 name: blueprint_cli
 description: A CLI tool for quickly bootstrapping Flutter projects and adding feature modules with clean architecture.
-version: 0.0.2
+version: 0.0.2+1
 homepage: https://github.com/EslamElnady0/blue_print
 repository: https://github.com/EslamElnady0/blue_print
 issue_tracker: https://github.com/EslamElnady0/blue_print/issues
