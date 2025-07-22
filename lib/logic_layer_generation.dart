@@ -17,3 +17,18 @@ void createAllLogicLayerFiles({
   print('Creating file: $stateFilePath');
   File(stateFilePath).writeAsStringSync(stateContent(featureName));
 }
+
+void createCubitFiles({
+  required String logicPath,
+  required String cubitName,
+}) {
+  final cubitPath = path.join(logicPath, '${cubitName}_cubit');
+  print('Creating feature layer: $cubitPath');
+  Directory(cubitPath).createSync(recursive: true);
+  final cubitFilePath = path.join(cubitPath, '${cubitName}_cubit.dart');
+  final stateFilePath = path.join(cubitPath, '${cubitName}_state.dart');
+  print('Creating file: $cubitFilePath');
+  File(cubitFilePath).writeAsStringSync(cubitContent(cubitName));
+  print('Creating file: $stateFilePath');
+  File(stateFilePath).writeAsStringSync(stateContent(cubitName));
+}

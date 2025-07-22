@@ -18,12 +18,16 @@ void main(List<String> arguments) {
   parser
       .addCommand('add-feature')
       .addOption('name', abbr: 'n', help: 'Feature name', mandatory: true);
+  parser
+      .addCommand('create-cubit')
+      .addOption('feature', abbr: 'f', help: 'Feature name', mandatory: true)
+      .addOption('name', abbr: 'n', help: 'Cubit name', mandatory: true);
 
   final results = parser.parse(arguments);
 
   if (results.command == null) {
     print('Usage: blue_print <command>');
-    print('Commands: create-project, add-feature');
+    print('Commands: create-project, add-feature, create-cubit');
     exit(1);
   }
 
@@ -31,6 +35,11 @@ void main(List<String> arguments) {
     createProject(results.command!['name'] as String);
   } else if (results.command!.name == 'add-feature') {
     addFeature(results.command!['name'] as String);
+  } else if (results.command!.name == 'create-cubit') {
+    createCubit(
+      results.command!['feature'] as String,
+      results.command!['name'] as String,
+    );
   }
 }
 
@@ -95,6 +104,26 @@ void addFeature(String featureName) {
   createAllLayersFiles(featurePath: featurePath, featureName: featureName);
   print(
     'Feature $featureName added with data, domain, and presentation layers.',
+  );
+}
+
+void createCubit(String featureName, String cubitName) {
+  final featurePath = path.join(
+    Directory.current.path,
+    'lib',
+    'features',
+    featureName,
+  );
+
+  if (!Directory(featurePath).existsSync()) {
+    print('Error: Feature $featureName not found at $featurePath');
+    exit(1);
+  }
+
+  final logicPath = path.join(featurePath, 'logic');
+  createCubitFiles(logicPath: logicPath, cubitName: cubitName);
+  print(
+    'Cubit $cubitName created in feature $featureName.',
   );
 }
 
