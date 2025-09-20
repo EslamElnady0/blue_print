@@ -171,11 +171,7 @@ void addDependenciesToPubspec(String projectPath, String projectName) {
     print('Adding dev dependency: $devDep');
     final result = Process.runSync(
       'dart',
-      [
-        'pub',
-        'add',
-        devDep == "freezed" ? 'dev:$devDep:^2.5.7' : 'dev:$devDep',
-      ],
+      ['pub', 'add', 'dev:$devDep'],
       workingDirectory: projectPath,
       runInShell: true,
     );
